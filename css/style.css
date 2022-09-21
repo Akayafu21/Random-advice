@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    /* outline: 1px solid salmon; */
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--Dark-Grayish-Blue);
+    max-width: 22rem;
+    height: fit-content;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    position: relative;
+}
+
+h6{
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--Neon-Green);
+   
+}
+
+h1{
+    text-align: center;
+    color: var(--Light-Cyan);
+    margin-bottom: 1.5rem;
+}
+
+.pattern {
+    background-image: url(/images/pattern-divider-desktop.svg);
+    width: 100%;
+    height: 24px;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+
+.butt {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%,+50%);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.butt:hover{
+    box-shadow: 0 0 50px var(--Neon-Green);
+}
+
+img {
+    width: 1rem;
+}
+
+.upbox {
+    display: inline;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+    body{
+        padding: .5rem;
+    }
+
+    main{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    h6{
+        font-size: 10px;
+        margin-bottom: 1rem;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .pattern {
+        background-image: url(/images/pattern-divider-mobile.svg);
+        margin-bottom: 2rem ;
+    }
+    
+}
